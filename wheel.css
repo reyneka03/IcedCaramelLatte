@@ -1,0 +1,203 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body{
+  background-color: #f1f0cc;
+  font-family: Garamond, serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+h1{
+
+}
+
+#nav {
+background-color: #987034;
+height: 25%;
+height: 50px;
+font-size: 25px;
+font-weight:bold;
+font-family: Garamond, serif;
+text-align: center; 
+max-width:100%;
+
+}  
+#nav ul {
+padding: 5px;
+margin: 5px;
+list-style-type: none;
+text-align: center; 
+width:100%;
+}  
+#nav li {
+display: inline;
+padding:10px;
+vertical-align:middle;
+} 
+
+#nav a {
+text-decoration:none;
+padding: 8px 4px 8px 4px;
+color: white;
+vertical-align:middle;
+} 
+#nav a:hover{
+color: black;
+background-color: pink; 
+}
+
+/*  Random Coffee    */
+.mainbox{
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+.mainbox:after{
+  position: absolute;
+  content: '';
+  width: 32px;
+  height: 32px;
+  background: url('Images_Used/arrow-left.png') no-repeat;
+  background-size: 32px;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.box{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 50%;
+  border: 10px solid #fff;
+  overflow: hidden;
+  transition: all ease 5s;
+}
+span{
+  width: 50%;
+  height: 50%;
+  display: inline-block;
+  position: absolute;
+}
+.span1{
+  clip-path: polygon(0 92%, 100% 50%, 0 8%);
+  background-color: fuchsia;
+  top: 120px;
+  left: 0;
+}
+.span2{
+  clip-path: polygon(100% 92%, 0 50%, 100% 8%);
+  background-color: #ff4fa1;
+  top: 120px;
+  right: 0;
+}
+.span3{
+  clip-path: polygon(50% 0%, 8% 100%, 92% 100%);
+  background-color: pink;
+  bottom: 0;
+  left: 120px;
+}
+.span4{
+  clip-path: polygon(50% 100%, 92% 0, 8% 0);
+  background-color: lightcoral;
+  top: 0;
+  left: 120px;
+}
+
+
+.box1 .span3 b{
+   transform: translate(-50%, -50%) rotate(-270deg);
+}
+.box1 .span1 b,
+.box2 .span1 b{
+  transform: translate(-50%, -50%) rotate(185deg);
+}
+.box2 .span3 b{
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.box1 .span4 b,
+.box2 .span4 b{
+  transform: translate(-50%, -50%) rotate(-85deg);
+}
+
+.box2{
+  width: 100%;
+  height: 100%;
+  transform: rotate(-135deg);
+}
+span b{
+  font-size: 17px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.spin{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  background-color:  #af3f2b;
+  color: #fff;
+  box-shadow: 0 5px 20px  #af3f2b;
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+}
+.spin:active{
+  width: 70px;
+  height: 70px;
+  font-size: 20px;
+}
+
+.mainbox.animate:after{
+  animation: animateArrow 0.7s ease infinite;
+}
+@keyframes animateArrow{
+  50%{
+    right: -40px;
+  }
+}
+
+.footer {
+    width: 100%;
+    min-height: 50px;
+    margin-top: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+.footer ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+.footer ul a:hover {
+  opacity: 1;
+}
+.footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 15px;
+  color: black;
+}
