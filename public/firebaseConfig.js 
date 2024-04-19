@@ -1,0 +1,11 @@
+const firebaseConfig = {
+  apiKey: "AIzaSyCK9BD8frgQC00j3nAyj5kxV_lTBt2O0K8",
+  authDomain: "info1601-icedcaramellatt-4a63c.firebaseapp.com",
+  projectId: "info1601-icedcaramellatt-4a63c",
+  storageBucket: "info1601-icedcaramellatt-4a63c.appspot.com",
+  messagingSenderId: "146240711804",
+  appId: "1:146240711804:web:5ddec7df76677a619cedf9",
+  measurementId: "G-E092KMDNCG"
+};
+
+export default firebaseConfig
