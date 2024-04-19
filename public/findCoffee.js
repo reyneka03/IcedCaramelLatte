@@ -2,7 +2,7 @@
 
 const videoSection=document.querySelector('section')
 
-fetch('https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=20&playlistId=PLcsVnMv1w7ERr2f263WMN6sT_sIeGHCxA&key=AIzaSyBgedVDhnCdBonLGNGZ_obWNtFJjsa_ic8')
+fetch('https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=20&playlistId=PLcsVnMv1w7ERr2f263WMN6sT_sIeGHCxA&key=AIzaSyA00qKdMH3Y28aTAD_yoj78qUErmhnQBYQ')
 
 
 .then(response=>response.json())
